@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
       name         = "MovingWindow",
-      version      = '0.1.0',
+      version      = '0.2.0',
       description  = "Applies a moving window-based signal processing",
       url          = "https://github.com/ekarakasis/MovingWindow",
       author       = "Evangelos G. Karakasis",

@@ -195,7 +195,7 @@ def MovingWindow(signal, windowSize=16, step=1, metric=np.mean, window='box', no
     elif window == 'gaussian':
         WT = get_window(('gaussian', windowSize/6), windowSize)
     else:
-        WT = get_window(window, windowSize)
+        WT = get_window(window, windowSize, fftbins=False)
 
     if normalizedWindow:
         WT = WT / np.sum(WT)

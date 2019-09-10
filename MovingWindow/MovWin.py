@@ -191,9 +191,9 @@ def MovingWindow(signal, windowSize=16, step=1, metric=np.mean, window='box', no
         windowSize = windowSize + 1
 
     if window == 'box':
-        WT = get_window('boxcar', windowSize)
+        WT = get_window('boxcar', windowSize, fftbins=False)
     elif window == 'gaussian':
-        WT = get_window(('gaussian', windowSize/6), windowSize)
+        WT = get_window(('gaussian', windowSize/6), windowSize, fftbins=False)
     else:
         WT = get_window(window, windowSize, fftbins=False)
 
